@@ -19,7 +19,7 @@ class Players:
 	tickets = 0
 	brawlBoxes = 99999
 	bigBoxes = 99999
-	profileIcon = 20
+	profileIcon = 0
 	trophies = 15000
 	experience = 999999
 	LeaderboardType = 0

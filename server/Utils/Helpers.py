@@ -52,4 +52,13 @@ class Helpers:
     def EventTimer(self):
         result = time.localtime(int(time.time()))
 
-        return (86400 - (result.tm_sec + (result.tm_min * 60) + (result.tm_hour * 3600)))   
+        return (86400 - (result.tm_sec + (result.tm_min * 60) + (result.tm_hour * 3600)))  
+        
+    def GemGrab(self):
+        start = time.time()
+        while time.time() - start < 7200:
+            random_number = random.randint(8,13)#i need find better way
+        
+        return random_number  
+
+        

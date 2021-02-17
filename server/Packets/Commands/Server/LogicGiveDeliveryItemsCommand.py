@@ -27,7 +27,7 @@ class LogicGiveDeliveryItemsCommand(Writer):
 
         self.writeVint(0)
         self.writeVint(7)
-        self.writeVint(0)
+        self.writeVint(1)
         self.writeVint(0)
         self.writeVint(random.randrange(1, 20))
         self.writeVint(0)

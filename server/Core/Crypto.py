@@ -25,7 +25,7 @@ class Nonce:
                                         
 class Crypto:
 	def __init__(self):
-		self.server_key = bytes.fromhex("03BBE171010D8F928E7B3B71773CCBEF75AE4B02E6D7B11BC760ED3AE853C839")
+		self.server_key = bytes.fromhex("78BD03628030B86BCF17817DF13A3E9C0E8FD03F06F222A44C40CA70F3ECC748")
 		self.client_sk = bytes.fromhex("BB14D6FD2B7C9823EAEDB4338CB7237F61E422D23C4977F74ADA052702C0C62D")
 		self.client_pk = crypto_scalarmult_base(self.client_sk)
 		self.session_key = b'\x13Y\xd8\x13M\x19\xf6\xffv\xe7q{\xb0\x9dl\x0c\x81\xe7)(\x9b\t\xc3\xfc'

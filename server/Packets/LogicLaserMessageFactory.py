@@ -29,8 +29,9 @@ packets = {
     10110: AnalyticEventMessage,
     10113: SetDeviceTokenMessage,
     10212: ChangeAvatarNameMessage,
+    14600: ChangeAvatarNameMessage,
     10513: AskForPlayingFacebookFriendsMessage,
-    14102: EndClientTurnMessage,
+    14102: EndClientTurnMessage,#
     14109: GoHomeFromOfflinePractiseMessage,
     14110: AskForBattleEndMessage,
     14113: GetPlayerProfileMessage,

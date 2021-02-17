@@ -17,16 +17,16 @@ class BattleEndMessage(Writer):
         self.writeVint(0) #Trophies Value
         self.writeVint(0) #Doubled Tokens
         self.writeVint(0) #Token Doubler Remaining
-        self.writeVint(0) #Unknown
+        self.writeVint(1) #Unknown   1
         self.writeVint(32) #Type (Capped XP, Star Token, Capped Tokens)
         self.writeVint(1) #End Screen Players
 
         self.writeString(self.player.name) #Your Name
         self.writeVint(1)  
-        self.writeVint(16) # CsvID
-        self.writeVint(0)  # BrawlerID
-        self.writeVint(29) # CsvID
-        self.writeVint(0)  
+        self.writeVint(16) # CsvID 16
+        self.writeVint(1)  # BrawlerID
+        self.writeVint(29) # CsvID 29
+        self.writeVint(self.player.selected_brawler)  
         self.writeVint(9999) #Brawler Trophies
         self.writeVint(10) #Brawler Power Level
         self.writeVint(0)  #Unknown
